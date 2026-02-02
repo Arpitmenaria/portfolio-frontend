@@ -1,0 +1,81 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background: black;
+  color: white;
+  min-height: 90vh;
+}
+
+.hero-left {
+  max-width: 50%;
+}
+
+.hero-left h1 {
+  font-size: 48px;
+}
+
+.hero-left span {
+  color: orange;
+}
+
+.hero-left h2 {
+  margin: 10px 0;
+  color: #ccc;
+}
+
+.hero-left p {
+  color: #aaa;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-dark {
+  padding: 12px 24px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-light {
+  padding: 12px 24px;
+  background: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-light:hover {
+  background: orange;
+  color: black;
+}
+
+/* Image */
+.hero-right img {
+  width: 350px;
+  border-radius: 20px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left {
+    max-width: 100%;
+  }
+
+  .hero-right img {
+    width: 250px;
+    margin-top: 30px;
+  }
+}
