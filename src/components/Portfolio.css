@@ -29,14 +29,21 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  align-items: stretch; 
 }
 
 .portfolio-card {
   background: #0f0f0f;
   border: 1px solid #333;
   border-radius: 15px;
-  padding: 15px;
+  padding: 20px;
   transition: 0.3s;
+  display: flex;              /* ✅ ADD */
+  flex-direction: column;     /* ✅ ADD */
+}
+
+.portfolio-card .app-buttons {
+  margin-top: auto;   /* 🔥 MAIN FIX */
 }
 
 .portfolio-card:hover {
@@ -47,11 +54,13 @@
 .portfolio-card img {
   width: 100%;
   border-radius: 10px;
+  margin-bottom: 10px; /* ✅ ADD */
 }
 
 .portfolio-card h4 {
   margin: 15px 0 10px;
   font-size: 18px;
+  min-height: 48px;
 }
 
 .portfolio-card a {
@@ -80,4 +89,98 @@
   .portfolio-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* 🔥 TABS */
+.portfolio-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.portfolio-tabs button {
+  background: transparent;
+  border: 1px solid #444;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.portfolio-tabs button:hover {
+  border-color: orange;
+}
+
+.portfolio-tabs .active {
+  background: orange;
+  color: black;
+  border-color: orange;
+}
+
+/* 📱 APP BUTTONS */
+.app-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.app-buttons a {
+  border: 1px solid white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.app-buttons a:hover {
+  background: orange;
+  color: black;
+  border-color: orange;
+}
+
+.portfolio-grid {
+  row-gap: 40px;
+  column-gap: 30px;
+}
+
+.image-wrapper {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-wrapper img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.image-wrapper {
+  background: #111;
+  border-radius: 12px;
+}
+
+/* 🌐 Web images (laptop style) */
+.web-img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+/* 📱 Mobile + AI images */
+.mobile-img {
+  width: 100%;
+  height: 220px; /* 🔥 bigger */
+  object-fit: contain;
+  padding: 10px;
+}
+
+.mobile-img,
+.web-img {
+  background: #111;
+  border-radius: 10px;
 }
