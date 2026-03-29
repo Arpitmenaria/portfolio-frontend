@@ -11,6 +11,9 @@ import {
   FaJs,
   FaDatabase,
   FaAws,
+  FaKey,
+  FaGithub,
+  FaMobileAlt,
 } from "react-icons/fa";
 
 import {
@@ -23,10 +26,16 @@ import {
   SiDocker,
   SiKubernetes,
   SiGithubactions,
+  SiOpenai,
+  SiRedux,
+  SiPostman,
+  SiRazorpay ,
+  SiVercel,
 } from "react-icons/si";
 
 function Skills() {
   const skills = [
+    { icon: <FaMobileAlt />, name: "React Native" },
     { icon: <FaReact />, name: "React" },
     { icon: <SiNextdotjs />, name: "Next.js" },
     { icon: <FaNodeJs />, name: "Node.js" },
@@ -40,6 +49,11 @@ function Skills() {
     { icon: <FaHtml5 />, name: "HTML5" },
     { icon: <FaCss3Alt />, name: "CSS3" },
     { icon: <FaJs />, name: "JavaScript" },
+  { icon: <SiRedux />, name: "Redux" },
+
+  { icon: <FaKey />, name: "Authentication (JWT)" },
+  { icon: <SiPostman />, name: "REST APIs" },
+  { icon: <SiOpenai />, name: "AI Integration" },
     // { icon: <FaBootstrap />, name: "Bootstrap" },
 
     { icon: <SiWordpress />, name: "WordPress" },

@@ -9,7 +9,7 @@ function Hero() {
         <h1>
           Hi, I am <span>Arpit Menaria</span>
         </h1>
-        <h2>Full Stack Developer</h2>
+        <h2>Building SaaS, Mobile Apps & AI Solutions</h2>
         <p>
           Passionate software developer turning ideas into reality with
           elegant code and innovative designs creating unique digital

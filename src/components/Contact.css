@@ -122,3 +122,21 @@
     font-size: 40px;
   }
 }
+
+.contact-info > div {
+  display: flex;
+  align-items: center;   /* ✅ THIS FIXES ALIGNMENT */
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.contact-info svg {
+  font-size: 22px;
+  color: orange;
+  min-width: 22px; /* keeps alignment consistent */
+}
+
+.contact-info > div div {
+  display: flex;
+  flex-direction: column;
+}

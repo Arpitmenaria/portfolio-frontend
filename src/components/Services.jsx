@@ -1,5 +1,5 @@
 import "./Services.css";
-import { FaCode, FaLaptopCode, FaServer } from "react-icons/fa";
+import { FaCode, FaLaptopCode, FaMobileAlt } from "react-icons/fa";
 
 function Services() {
   return (
@@ -14,8 +14,7 @@ function Services() {
           <FaCode className="service-icon" />
           <h3>Software Development</h3>
           <p>
-            I offer custom software development solutions tailored to your
-            specific business needs using modern technologies.
+            I build scalable and efficient software solutions tailored to business needs, focusing on performance, clean architecture, and long-term maintainability.
           </p>
         </div>
 
@@ -23,17 +22,15 @@ function Services() {
           <FaLaptopCode className="service-icon" />
           <h3>Website Development</h3>
           <p>
-            I develop fast, responsive and visually appealing websites that
-            provide excellent user experience.
+            I create modern, responsive, and high-performance websites using the latest technologies, ensuring seamless user experience across all devices.
           </p>
         </div>
 
         <div className="service-card">
-          <FaServer className="service-icon" />
-          <h3>Backend Development</h3>
+          <FaMobileAlt className="service-icon" />
+          <h3>Mobile App Development</h3>
           <p>
-            I build secure and scalable backend systems using Node.js, Express
-            and MongoDB with REST APIs.
+            I develop cross-platform mobile applications using React Native, delivering smooth, fast, and user-friendly apps for both Android and iOS.
           </p>
         </div>
       </div>

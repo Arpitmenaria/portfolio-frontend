@@ -58,7 +58,7 @@ function Contact() {
     <section className="contact" id="contact">
       <div className="contact-left">
         <h2>
-          let’s do something <br /> awesome
+          Let’s do something <br /> awesome
         </h2>
 
         <div className="contact-info">
@@ -67,7 +67,7 @@ function Contact() {
             <div>
               <h4>Address</h4>
               <p>
-                Gujarat <br /> Ahmedabad, India
+                India
               </p>
             </div>
           </div>
